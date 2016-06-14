@@ -1,3 +1,3 @@
 # baseDemo
-Java_Maven_Spring初始搭建
-init
+Maven_Spring初始搭建(Java)
+v0.0.1
