@@ -1,0 +1,16 @@
+抽象类(Abstract Class)
+抽象类提供一个类型的部分实现，可以有实例变量，构造方法，抽象方法(Abstract Method 即不能有方法的实现哪怕是{})和具体方法。一个抽象类不会有实例；它是用来继承的。它反映了一种一般/特殊化的关系。
+用关键字abstract修饰的类称为abstract类（抽象类）。
+abstract class A
+{ …        }
+
+abstract类有特点:和普通的类相比，abstract类可以有abstract方法。对于abstract方法，只允许声明，不允许实现，而且不允许使用final修饰abstract方法。
+abstract class A
+{      abstract  int min(int x,int y);
+        int max(int x,int y)
+                        {  return x>y?x:y; }
+}
+
+abstract类不能用new运算创建对象
+   对于abstract类，我们不能使用new运算符创建该类的对象，需产生其子类，由子类创建对象，如果一个类是abstract类的子类，它必须具体实现父类的abstract方法，这就是为什么不允许使用final修饰abstract方法的原因。
+一个abstract类只关心它的子类是否具有某种功能，并不关心功能的具体行为，功能的具体行为由子类负责实现，抽象类中的抽象方法可以强制子类必须给出这些方法的具体实现。
