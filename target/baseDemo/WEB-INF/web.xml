@@ -5,6 +5,17 @@
          id="WebApp_ID" version="3.0">
     <display-name>baseDemo</display-name>
 
+    <!--Servlet-->
+    <servlet>
+        <servlet-name>TestServlet</servlet-name>
+        <servlet-class>com.jweb.servlet.TestServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>TestServlet</servlet-name>
+        <url-pattern>/test</url-pattern>
+    </servlet-mapping>
+
     <!-- spring context -->
     <context-param>
         <param-name>contextConfigLocation</param-name>
