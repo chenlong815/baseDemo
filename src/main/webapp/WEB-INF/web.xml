@@ -17,10 +17,12 @@
     </servlet-mapping>
 
     <!-- spring context -->
+    <!--配置一个全局的上下文参数-->
     <context-param>
         <param-name>contextConfigLocation</param-name>
         <param-value>classpath:spring-ctx.xml</param-value>
     </context-param>
+    <!--加载一个Listener监听上下文，加载Spring的基础配置文件-->
     <listener>
         <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
     </listener>
