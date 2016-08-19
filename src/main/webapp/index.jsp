@@ -1,14 +1,12 @@
+<%@ page contentType="text/html; charset=gb2312"%>
+
 <html>
 <head>
-    <meta charset="utf-8">
+    <title>Java Base</title>
+    <meta http-equiv="Content-Type" content="text/html charset=gb2312">
 </head>
 <body>
-<h2>Hello ChenLong!</h2>
-
-<form action="<%=request.getContextPath() %>/test" method="get">
-    userName:<input type="text" name="userName"><br/>
-    passWord:<input type="text" name="passWord"><br/>
-    <input type="submit" value="Login">
-</form>
+<h2>ChenLong-JavaÑ§Ï°Ä£°å</h2>
+<a href="test_Servlet.jsp">Servlet</a>
 </body>
 </html>
