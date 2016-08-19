@@ -3,12 +3,6 @@ package com.jweb.common;
 import com.alibaba.fastjson.JSON;
 import org.springframework.ui.ModelMap;
 
-/**
- * User: Tainy
- * Date: 2015/11/25
- * Time: 10:06
- * To change this template use File | Settings | File Templates.
- */
 public class StateMsg {
     private ModelMap msg;
 
