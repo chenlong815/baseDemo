@@ -7,6 +7,6 @@
 </head>
 <body>
 <h2>ChenLong-Java学习模板</h2>
-<a href="test_Servlet.jsp">Servlet</a>
+<a href="studentManSys/login.jsp">基于Servlet的学生管理系统</a>
 </body>
 </html>
