@@ -1,8 +1,8 @@
 
 <%@ page language="java" pageEncoding="UTF-8"%>
-<%@ page import="com.jweb.model.userTable" %>
+<%@ page import="com.jweb.model.UserTable" %>
 <%
-userTable user=(userTable)session.getAttribute("user");
+UserTable user=(UserTable)session.getAttribute("user");
 if(user==null)
 {
  %>

@@ -1,4 +1,4 @@
-<%@page import="com.jweb.model.stuInfo"%>
+<%@page import="com.jweb.model.StuInfo"%>
 <%@ page import="java.util.List" %>
 <%@ page import="java.util.Iterator" %>
 <%@ page language="java" pageEncoding="UTF-8"%>
@@ -49,7 +49,7 @@
 		<%
 			int i = 0;
 			while (iter.hasNext()) {
-				stuInfo student = (stuInfo) iter.next();
+				StuInfo student = (StuInfo) iter.next();
 		%>
 		<tr <%if (i % 2 == 0) {%> bgcolor="#F0F8FF" <%}%>>
 			<td><%=student.getId()%></td>

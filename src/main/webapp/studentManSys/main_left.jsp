@@ -19,10 +19,10 @@
   <jsp:include page="isLogin.jsp"></jsp:include>
 
   <body>
-   <a href="inputStuInfo.jsp" target="main_right">录入学生信息</a><br>
-    <a href="<%=request.getContextPath() %>/getStudentInfo.do" target="main_right">查看学生信息</a><br>
-     <a href="student/queryAllStuServlet?osid=modify" target="main_right">修改学生信息</a><br>
-       <a href="student/queryAllStuServlet?osid=delete" target="main_right">删除学生信息</a><br>
+   <a href="stuInfo_add.jsp" target="main_right">录入学生信息</a><br>
+    <a href="<%=request.getContextPath() %>/StudentInfo.do?opId=query" target="main_right">查看学生信息</a><br>
+     <a href="<%=request.getContextPath() %>/StudentInfo.do?opId=update" target="main_right">修改学生信息</a><br>
+       <a href="<%=request.getContextPath() %>/StudentInfo.do?opId=delete" target="main_right">删除学生信息</a><br>
         <a href="<%=request.getContextPath() %>/LogOutServlet" target="_top">退出</a><br>
   </body>
 </html>

@@ -1,8 +1,7 @@
 package com.jweb.servlet;
 
-import com.jweb.model.userTable;
+import com.jweb.model.UserTable;
 
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -27,7 +26,7 @@ public class LoginServlet extends HttpServlet{
         System.out.println("用户名："+userName);
         System.out.println("密码："+passWord);
 
-        userTable user = new userTable();
+        UserTable user = new UserTable();
         user.setUsername(userName);
         user.setPassword(passWord);
 

@@ -1,6 +1,7 @@
 package com.jweb.dao;
 
-import com.jweb.model.stuInfo;
+import com.jweb.model.StuInfo;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -10,5 +11,9 @@ import java.util.List;
  */
 @Repository
 public interface IStudentDao {
-    public List<stuInfo> getStudentInfo();
+    public List<StuInfo> getStudentInfo();
+    public void addStudentInfo(@Param("stuInfo") StuInfo stuInfo);
+    public StuInfo getOneStudent(@Param("id") int id);
+    public void updateStudentInfo(@Param("stuInfo") StuInfo stuInfo);
+    public void deleteStudent(@Param("id") int id);
 }

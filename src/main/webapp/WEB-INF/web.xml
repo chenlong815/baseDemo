@@ -27,7 +27,6 @@
         <url-pattern>/LogOutServlet</url-pattern>
     </servlet-mapping>
 
-
     <!-- spring context -->
     <!--配置一个全局的上下文参数-->
     <context-param>
