@@ -1,2 +1,5 @@
 ChenLong-Java学习模板
 采用Maven管理项目依赖，包含Servlet、Spring、Spring MVC、Mybatis框架
+1.学生管理系统在StudentSys分支
+2.基础模板在baseDemo分之和master分支
+3.整体项目在All分支
