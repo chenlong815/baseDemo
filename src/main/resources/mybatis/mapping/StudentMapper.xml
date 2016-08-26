@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.jweb.dao.IStudentDao" >
+    <select id="getStudentInfo" resultType="com.jweb.model.StuInfo">
+        <!-- 底层的SQL语句 -->
+        select * from studentinfo
+    </select>
+
+    <insert id="addStudentInfo" parameterType="com.jweb.model.StuInfo">
+        insert into studentinfo VALUES(0,#{stuInfo.nicheng},#{stuInfo.truename},#{stuInfo.xb},
+        #{stuInfo.csrq},#{stuInfo.zy},#{stuInfo.kcs},#{stuInfo.xqs},#{stuInfo.bz})
+    </insert>
+
+    <select id="getOneStudent" resultType="com.jweb.model.StuInfo">
+        select * from studentinfo where id=#{id}
+    </select>
+
+    <update id="updateStudentInfo" parameterType="com.jweb.model.StuInfo">
+        update studentinfo set nicheng=#{stuInfo.nicheng},truename=#{stuInfo.truename},xb=#{stuInfo.xb},
+        csrq=#{stuInfo.csrq},zy=#{stuInfo.zy},kc=#{stuInfo.kcs},xq=#{stuInfo.xqs},bz=#{stuInfo.bz}
+        where id=#{stuInfo.id}
+    </update>
+
+    <delete id="deleteStudent" parameterType="int">
+        DELETE from studentinfo where id=#{id}
+    </delete>
+</mapper>

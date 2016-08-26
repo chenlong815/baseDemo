@@ -1,13 +1,12 @@
 <%@ page contentType="text/html; charset=gb2312"%>
+
 <html>
 <head>
     <title>Java Base</title>
     <meta http-equiv="Content-Type" content="text/html charset=gb2312">
 </head>
-
-<h2>ChenLong-JavaWeb基础模板</h2>
-<h5>采用Maven管理项目依赖，包含Servlet、Spring、Spring MVC、Mybatis框架</h5>
-<a href="test_Servlet.jsp">Servlet</a>
-</br><a href="jsTest/jsTest001.jsp">jsTest</a>
+<body>
+<h2>ChenLong-Java学习模板</h2>
+<a href="studentManSys/login.jsp">基于Servlet的学生管理系统</a>
 </body>
 </html>
