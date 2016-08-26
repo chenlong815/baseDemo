@@ -20,6 +20,11 @@ public class TestServlet extends HttpServlet{
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 //        super.doGet(req, resp);
+        doPost(req,resp);
+    }
+
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String userName=req.getParameter("userName");
         String passWord=req.getParameter("passWord");
         System.out.println("用户名："+userName);
@@ -31,10 +36,5 @@ public class TestServlet extends HttpServlet{
 //        请求转发//无法跳转到其他项目
         RequestDispatcher rd=req.getRequestDispatcher("/view/login.jsp");
         rd.forward(req,resp);
-    }
-
-    @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        super.doPost(req, resp);
     }
 }
