@@ -55,17 +55,24 @@ public class TestController {
     }
 
     @ResponseBody
-    @RequestMapping(value = "testDo.do",method = RequestMethod.GET)
-    public void testDo(ModelMap map, HttpServletRequest req, HttpServletResponse resp){
+    @RequestMapping(value = "testDo.do",method = RequestMethod.POST)
+    public String testDo(ModelMap map, HttpServletRequest req, HttpServletResponse resp){
+        System.out.println("Success");
         String userName=req.getParameter("userName");
         String passWord=req.getParameter("passWord");
-        System.out.println("用户名："+userName);
-        System.out.println("密码："+passWord);
 
-        try{
-            resp.sendRedirect("/view/login.jsp");
-        }catch (Exception e){
-            e.printStackTrace();
-        }
+        System.out.println("用户名："+userName);
+        System.out.println("密--码："+passWord);
+
+//        try{
+//            resp.sendRedirect("/view/login.jsp");
+//        }catch (Exception e){
+//            e.printStackTrace();
+//        }
+
+        String jsonStr;
+        map.addAttribute("test","");
+        jsonStr= StateMsg.toJson(1, map);
+        return jsonStr;
     }
 }
