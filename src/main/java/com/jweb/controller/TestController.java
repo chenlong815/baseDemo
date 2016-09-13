@@ -10,6 +10,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.annotation.Resource;
+import javax.servlet.RequestDispatcher;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.util.List;
 
 /**
@@ -49,5 +52,27 @@ public class TestController {
     public String page(ModelMap map){
 
         return "/login";
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "testDo.do",method = RequestMethod.POST)
+    public String testDo(ModelMap map, HttpServletRequest req, HttpServletResponse resp){
+        System.out.println("Success");
+        String userName=req.getParameter("userName");
+        String passWord=req.getParameter("passWord");
+
+        System.out.println("用户名："+userName);
+        System.out.println("密--码："+passWord);
+
+//        try{
+//            resp.sendRedirect("/view/login.jsp");
+//        }catch (Exception e){
+//            e.printStackTrace();
+//        }
+
+        String jsonStr;
+        map.addAttribute("test","");
+        jsonStr= StateMsg.toJson(1, map);
+        return jsonStr;
     }
 }
