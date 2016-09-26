@@ -49,10 +49,13 @@
             success: function (data) {
                 // // var x=$("#uname").val();
                 // var x=$("input").eq(0).val();
-                // $.cookie('username', x);
+
+                 $.cookie('userName', uname);
+
+                 $.cookie('passWord', upsw);
 
                 if(data.state == 1){
-                    window.location.assign("../index.jsp");
+                    window.location.assign("jsTestCookieGet.jsp");
                 }
                 if(data.state<0){
                     alert("登录失败","请重新输入","error");

@@ -28,6 +28,7 @@ public class StudentController {
         if(list.size()<1){
 
         }
+
         HttpSession session=request.getSession();
         session.setAttribute("stuInfo",list);
 
