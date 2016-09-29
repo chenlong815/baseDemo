@@ -46,6 +46,7 @@
 			<td>兴趣</td>
 			<td>备注</td>
 		</tr>
+
 		<%
 			int i = 0;
 			while (iter.hasNext()) {

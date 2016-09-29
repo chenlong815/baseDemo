@@ -234,11 +234,21 @@
       <artifactId>javax.servlet.jsp.jstl-api</artifactId>
       <version>1.2.1</version>
     </dependency>
+
     <dependency>
       <groupId>taglibs</groupId>
       <artifactId>standard</artifactId>
       <version>1.1.2</version>
     </dependency>
+
+    <!--Java JDBC-->
+    <!-- https://mvnrepository.com/artifact/org.clojure/java.jdbc -->
+    <dependency>
+      <groupId>org.clojure</groupId>
+      <artifactId>java.jdbc</artifactId>
+      <version>0.6.1</version>
+    </dependency>
+
 
   </dependencies>
 
