@@ -8,7 +8,7 @@ import java.sql.ResultSet;
 /**
  * Created by chenlong on 2016/9/29.
  */
-public class jdbcTest {
+public class JdbcTest {
 
     public static void main(String[] args){
         String sqlStr="select * from base_demo_user";
